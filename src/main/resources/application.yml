@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /tomas/bank/app
+
+spring:
+  application:
+    name: TomasBank
+  datasource:
+    url: jdbc:sqlserver://185.158.2.148:54321;database=JAVA2_FINALPROJECT;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: sql@TCT5*
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+      hibernate.default_schema: dbo
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+
